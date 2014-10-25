@@ -1,0 +1,2 @@
+nbad-xtra-assignment
+====================
