@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Academic Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <h1>Welcome Computing and Informatics Student!</h1>
+       
+        <form action="AcademicController">
+            <table>
+                <tr><td>Enter you student ID </td><td><input type="text" name="studentID"></td></tr>
+                <tr>
+                    <td>Select you program degree </td>
+                    <td>
+                        <input type="radio" name="program" value="bachelors">Bachelors<br>
+                        <input type="radio" name="program" value="masters">Masters <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select Semester:</td>
+                    <td>
+                        <select name="semester">
+                            <option value="spring2015">Spring '15</option>
+                            <option value="fall2015">Fall '15</option>
+                            <option value="spring2016">Spring '16</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select Courses to Add:
+                    </td><td>
+                        <input type="checkbox" name="course" value="5166">Network Based Application Development<br>
+                        <input type="checkbox" name="course" value="6410">Personalization and Recommender Systems 
+                    </td></tr>     
+            </table>
+            <br>
+            <input type='submit' value="Add Courses">
+        </form>
+    </body>
+</html>
